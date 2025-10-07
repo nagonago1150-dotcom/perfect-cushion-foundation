@@ -1062,3 +1062,35 @@ body::after {
         transition-duration: 0.01ms !important;
     }
 }
+/* PR表記 */
+.pr-footer {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+    font-size: 10px;
+    color: rgba(44, 44, 44, 0.4);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    pointer-events: none;
+}
+
+.pr-footer p {
+    margin: 0;
+    padding: 4px 8px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    backdrop-filter: blur(5px);
+}
+
+@media (max-width: 768px) {
+    .pr-footer {
+        font-size: 9px;
+        bottom: 8px;
+        right: 8px;
+    }
+    
+    .pr-footer p {
+        padding: 3px 6px;
+    }
+}
