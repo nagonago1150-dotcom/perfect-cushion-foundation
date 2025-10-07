@@ -1,6 +1,6 @@
 let currentQuestion = 1;
 const answers = {};
-const redirectUrl = 'https://ac-ld.catsys.jp/35cdb41fDc62db0D/cl/?bId=d69VVc9e';
+const redirectUrl = 'https://www.shinnihonseiyaku.co.jp/lp/promotion/cosme/2375b_19/';
 
 // カスタムカーソルの初期化
 function initCursor() {
