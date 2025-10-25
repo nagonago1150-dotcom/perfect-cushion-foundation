@@ -578,6 +578,21 @@ body::after {
     white-space: nowrap;
 }
 
+.question-image-container {
+    text-align: center;
+    margin: 30px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.question-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
 .options {
     display: flex;
     flex-direction: column;
@@ -591,8 +606,8 @@ body::after {
     backdrop-filter: var(--backdrop-blur);
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 60px;
-    padding: 20px 40px;
-    font-size: 15px;
+    padding: 24px 40px;
+    font-size: 18px;
     font-weight: 400;
     font-family: 'Noto Sans JP', sans-serif;
     color: var(--text-primary);
@@ -604,7 +619,7 @@ body::after {
     letter-spacing: 0.05em;
     opacity: 0;
     animation: fadeInUp 0.6s ease-out forwards;
-    box-shadow: 
+    box-shadow:
         0 8px 32px rgba(0, 0, 0, 0.04),
         inset 0 0 0 1px rgba(255, 255, 255, 0.9),
         inset 0 0 40px rgba(255, 255, 255, 0.3),
@@ -681,9 +696,9 @@ body::after {
 
 .leading-text {
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    color: var(--text-secondary);
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--text-primary);
     margin-bottom: 80px;
     opacity: 0;
     animation: fadeInUp 1s ease-out 0.3s forwards;
@@ -742,8 +757,9 @@ body::after {
 }
 
 .loading-text {
-    font-size: 20px;
-    color: var(--text-secondary);
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--text-primary);
     opacity: 0;
     animation: fadeInUp 1s ease-out 0.6s forwards, pulse 2.5s ease-in-out 1.8s infinite;
     letter-spacing: 0.05em;
