@@ -597,6 +597,11 @@ body::after {
     max-width: 350px;
 }
 
+/* スマホのみ表示される改行 */
+.sp-only {
+    display: none;
+}
+
 .options {
     display: flex;
     flex-direction: column;
@@ -872,10 +877,14 @@ body::after {
 }
 
 @media (max-width: 768px) {
+    .sp-only {
+        display: inline;
+    }
+
     .section {
         padding: 30px 0 50px 0;
     }
-    
+
     .container {
         padding: 0 20px;
     }
